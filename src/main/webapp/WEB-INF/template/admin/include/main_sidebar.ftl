@@ -109,7 +109,8 @@
 								</li>
 							[/#if]
 						[/@has_permission_tag]
-						[@has_permission_tag permission="admin:storeCategory"]
+						[#--店铺分类--]
+						[#--[@has_permission_tag permission="admin:storeCategory"]
 							[#if hasPermission]
 								<li class="list-group-item[#if .main_template_name?matches("admin/store_category/.*")] active[/#if]">
 									<a href="${base}/admin/store_category/list">
@@ -118,7 +119,7 @@
 									</a>
 								</li>
 							[/#if]
-						[/@has_permission_tag]
+						[/@has_permission_tag]--]
 						[@has_permission_tag permission="admin:storeRank"]
 							[#if hasPermission]
 								<li class="list-group-item[#if .main_template_name?matches("admin/store_rank/.*")] active[/#if]">
