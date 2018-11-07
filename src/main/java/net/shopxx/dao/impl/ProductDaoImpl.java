@@ -273,6 +273,7 @@ public class ProductDaoImpl extends BaseDaoImpl<Product, Long> implements Produc
 			subquery.where(criteriaBuilder.equal(subqueryRoot.get("type"), storeType));
 			restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.in(root.get("store")).value(subquery));
 		}
+
 		// 查询当前店铺商品 与店铺Id为2的商品
 		if (store != null) {
 			restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.or(criteriaBuilder.equal(root.get("store"), (long)2),criteriaBuilder.equal(root.get("store"), store)));
