@@ -44,7 +44,7 @@ import net.shopxx.util.SystemUtils;
 
 /**
  * Dao - 商品
- * 
+ *
  * @author SHOP++ Team
  * @version 6.1
  */
@@ -487,7 +487,7 @@ public class ProductDaoImpl extends BaseDaoImpl<Product, Long> implements Produc
 
 	/**
 	 * 设置商品有效状态
-	 * 
+	 *
 	 * @param store
 	 *            店铺
 	 */
@@ -500,7 +500,7 @@ public class ProductDaoImpl extends BaseDaoImpl<Product, Long> implements Produc
 
 	/**
 	 * 设置商品无效状态
-	 * 
+	 *
 	 * @param store
 	 *            店铺
 	 */
